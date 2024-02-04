@@ -13,30 +13,10 @@
 }
 
 body {
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
   padding: 1.6rem;
-}
-
-.logo {
-  padding: 2rem;
-}
-
-h4,
-h5 {
-  font-size: 1.5rem;
-  color: var(--color-white);
-  margin: 30px;
-  padding: 0;
-  margin: 0;
-}
-
-.z-text {
-  transform: rotateY(-15deg);
-  transition: transform 1s;
-}
-
-.z-layer:not(:first-child) {
-  color: var(--color-light1);
 }
 
 /******* header ******/
@@ -50,4 +30,64 @@ h5 {
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.z-text {
+  transform: rotateY(-15deg);
+  transition: transform 1s;
+}
+
+.z-layer:not(:first-child) {
+  color: var(--color-light1);
+}
+
+.heading-h1 {
+  color: var(--color-white);
+  margin: 30px;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.headinh-h1-main {
+  font-size: 1.5rem;
+}
+
+.headinh-h1-sub {
+  font-size: 1.3rem;
+}
+
+.heading-primary {
+  color: var(--color-white);
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 2.5rem;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1.1rem;
 }
